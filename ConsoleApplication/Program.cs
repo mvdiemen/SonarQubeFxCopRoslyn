@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Net;
 using System.Threading.Tasks;
 
 namespace ConsoleApplication
@@ -10,6 +7,14 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {
+
+        }
+
+        public async Task<string> DownloadContent(string url)
+        {
+            //Download The Search Page
+            var webClient = new WebClient();
+            return await webClient.DownloadStringTaskAsync(url);
         }
     }
 }
