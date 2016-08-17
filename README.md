@@ -15,6 +15,7 @@ Configuration of environment
 
 Steps to reproduce
  - Download repro to local machine
+ - Restore NuGet packages for this project in the repro
  - Open Visual Studio Developer Command Prompt and navigate to the directory where the .sln file is located.
  - Run the following command: <location of SonarQube MSBuild runner>\MSBuild.SonarQube.Runner.exe" /k:test /n:test /v:1.0
  - Run the following command: MsBuild /t:rebuild
