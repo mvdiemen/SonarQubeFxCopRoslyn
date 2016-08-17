@@ -8,8 +8,8 @@ Used versions:
 
 Configuration of environment
  - Install SonarQube
- - Restore the quality profiles Default.xml and Extension.xml
- - The parent of the Extension(.xml) Quality Profile is the Default(.xml) Quality profile.
+ - Restore the quality profiles DefaultQualityProfile.xml and ExtensionQualityProfile.xml
+ - The parent of the Extension(QualityProfile.xml) Quality Profile is the Default(QualityProfile.xml) Quality profile in SonarQube.
  - Install Visual Studio 2015 Update 3
  - Download the SonarQube MSBuild runner
 
