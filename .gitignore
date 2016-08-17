@@ -243,3 +243,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+#SonarQube conf folder
+/.sonarqube/conf
