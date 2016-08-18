@@ -9,17 +9,18 @@ Used versions:
 Configuration of environment
  - Install SonarQube
  - Restore the quality profiles DefaultQualityProfile.xml and ExtensionQualityProfile.xml
- - The parent of the Extension(QualityProfile.xml) Quality Profile is the Default(QualityProfile.xml) Quality profile in SonarQube.
+ - The parent of the Extension(QualityProfile.xml) Quality Profile is the Default(QualityProfile.xml) Quality profile in SonarQube
+ - Make the Extension Quality profile the default profile
  - Install Visual Studio 2015 Update 3
  - Download the SonarQube MSBuild runner
 
 Steps to reproduce
  - Download repro to local machine
  - Restore NuGet packages for this project in the repro
- - Open Visual Studio Developer Command Prompt and navigate to the directory where the .sln file is located.
+ - Open Visual Studio Developer Command Prompt and navigate to the directory where the .sln file is located
  - Run the following command: <location of SonarQube MSBuild runner>\MSBuild.SonarQube.Runner.exe" /k:test /n:test /v:1.0
  - Run the following command: MsBuild /t:rebuild
- - You will receive the following error:
+ - The following error occurs:
 ```
 OverrideCodeAnalysisProperties:
   Running FxCop analysis using the SonarQube ruleset. Ruleset: C:\Users\AdminUser\Documents\Visual Studio 2015\Projects\ConsoleApplication\.sonarqube\conf\\SonarQubeFxCop-cs.ruleset
